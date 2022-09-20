@@ -13,7 +13,8 @@ ARGUMENTS
   \t   \te.g. $HOME/letop/logs
 
 DIRECTIONS
-  \tAppend the following lines to /etc/cron.d/letop
+  \t1. Install iftop
+  \t2. Append the following lines to /etc/cron.d/letop
 
 DIR_L=$(cd .. && pwd)
  *  *  *  *  * root bash \${DIR_L}/scripts/iftop.sh \${DIR_L}/logs
